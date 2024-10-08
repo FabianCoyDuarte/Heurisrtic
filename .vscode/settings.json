@@ -1,0 +1,11 @@
+{
+    "workbench.activityBar.location": "default",
+    "workbench.activityBar.iconClickBehavior": "toggle",
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#524e4e",
+        "activityBar.activeBorder": "#037223",
+        "statusBar.background": "#080808",
+        "statusBarItem.hoverBackground": "#0d8828",
+        "statusBarItem.hoverForeground": "#131313",
+    }
+}
