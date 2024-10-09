@@ -50,7 +50,7 @@ def create_cities_dataframe(cities=None):
     # loop through the cities list and get the latitudes and longitudes
     for city in cities:
         geolocator = geopy.geocoders.Nominatim(user_agent="tsp_pandas")
-        location = geolocator.geocode(city)
+        location = geolocator.geocode(city, timeout=None)
         latitudes.append(location.latitude)
         longitudes.append(location.longitude)
     # create a dataframe from the cities, latitudes, and longitudes
@@ -63,7 +63,7 @@ def create_cities_dataframe(cities=None):
     )
     return df
 
-
+## Traveling sales problem
 def tsp(cities_df):
     """Traveling Salesman Problem using Pandas and Geopy"""
 

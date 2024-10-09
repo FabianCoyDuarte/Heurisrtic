@@ -14,7 +14,9 @@ global-install: install language-install
 
 test:
 	#ignores the virus of pandas warnings
-	python -m pytest -vv -p no:warnings test_*.py tests/
+	# python -m pytest -vv -p no:warnings test_fetch_cities.py
+	# python -m pytest -vv -p no:warnings test_*.py tests/
+	# # python -m pytest -vv -p no:warnings --cov=src tests/
 
 format:	
 	black .

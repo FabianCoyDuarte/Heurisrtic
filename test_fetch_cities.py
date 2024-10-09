@@ -1,5 +1,5 @@
 from fetch_cities_lat_long import main, my_cities, create_cities_dataframe
-import pytest
+import pytest # type: ignore
 
 # create a list of cities
 city_list = my_cities("New York", "Knoxville", "Los Angeles", "Chicago")
